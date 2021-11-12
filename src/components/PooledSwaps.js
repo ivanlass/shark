@@ -1,3 +1,4 @@
+import ProgressBar from "./ProgressBar";
 
 
 function PooledSwaps() {
@@ -21,7 +22,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td> <ProgressBar width={22}/> </td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -31,7 +32,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={66}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -41,7 +42,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={100}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -51,7 +52,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={35}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -61,7 +62,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={35}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -71,7 +72,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={35}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -81,7 +82,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={35}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -91,7 +92,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={35}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>
@@ -101,7 +102,7 @@ function PooledSwaps() {
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
                         <td>15</td>
-                        <td>progress bar</td>
+                        <td><ProgressBar width={35}/></td>
                         <td>arrow</td>
                         <td>Wait</td>
                         <td>Cancel</td>

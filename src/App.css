@@ -124,7 +124,7 @@ table{
 }
 
 td {
-  padding: 15px;
+  padding: 10px 0 0;
   font-size: 12px;
 }
 
@@ -141,3 +141,38 @@ tr:nth-child(even) {
   background: #0F1325;
 }
 
+
+
+.inner-progress {
+  background: #27F09E;
+  height: 100%;
+}
+
+.outer-progress {
+  border: 1px solid #27F09E;
+  height: 16px;
+  border-radius: 100px;
+  padding: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.full {
+  border-radius: 100px;
+}
+
+.not-full {
+  border-radius: 100px 0px 0px 100px;
+}
+
+
+.progress-bar-wrapper {
+  margin-top: 30px;
+  position: relative;
+}
+
+.progress-max-num {
+  position: absolute;
+  right: -26px;
+  top:-1px;
+}
