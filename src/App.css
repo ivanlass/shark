@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body, html {
+  background: black;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+  background: black;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
-@keyframes App-logo-spin {
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  border: 1px solid #158368; 
+  border-radius: 7px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #27F09E; 
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.navigation {
+  border-bottom: 2px solid #262C4E;
+}
+
+.bottom-lines-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-lines-img {
+  width: 100%;
+}
+
+
+.cylinder-wrapper {
+  position: relative;
+  width: 104px;
+  height: 93px;
+}
+
+.cylinder {
+  position: absolute;
+}
+
+.circle {
+  position: absolute;
+  top: 0px;
+  animation-duration: 1.4s;
+  animation-name: jump;
+  animation-iteration-count: infinite;
+}
+
+.circle2 {
+  top: 10px;
+  animation-delay: .4s;
+}
+.circle3 {
+  top: 20px;
+  animation-delay: .3s;
+}
+
+
+@keyframes jump {
   from {
-    transform: rotate(0deg);
+0%: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    top: 64px
+  }
+
+  100% {
+    top: 0px
   }
 }
+
+
+
+
+
+.content-toggle-btn{
+  background: none;
+  border: none;
+}
+
+
+table{
+  width: 100%;
+}
+
+.table-wrapper-outside {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(39, 240, 158, 1));
+  border-radius: 27px 0 0 27px;
+  padding: 1px;
+}
+
+.table-wrapper {
+  background: #232844;
+  border-radius: 27px 0 0 27px;
+  padding: 20px 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+td {
+  padding: 15px;
+  font-size: 12px;
+}
+
+th {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.left {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #0F1325;
+}
+
