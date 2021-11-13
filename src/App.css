@@ -6,6 +6,7 @@ body, html {
   background: black;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 .App {
@@ -46,10 +47,11 @@ body, html {
 .bottom-lines-wrapper {
   position: absolute;
   bottom: 0;
+  z-index: 0;
 }
 
 .bottom-lines-img {
-  width: 100%;
+  min-width: 100vw;
 }
 
 
@@ -119,8 +121,10 @@ table{
   background: #232844;
   border-radius: 27px 0 0 27px;
   padding: 20px 10px;
-  height: 300px;
+  height: 650px;
   overflow-y: scroll;
+  position: relative;
+  z-index: 1;
 }
 
 td {
@@ -141,6 +145,11 @@ tr:nth-child(even) {
   background: #0F1325;
 }
 
+.pooled-label {
+  text-align: left;
+  font-size: 25px;
+  opacity: .7;
+}
 
 
 .inner-progress {
