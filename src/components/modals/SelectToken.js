@@ -25,10 +25,10 @@ function SelectToken() {
                     
                 </div>
                 <div className="btn-group-wrapper mt-3">
-                    <p className="btn-token "><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</p>
-                    <p className="btn-token"><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</p>
-                    <p className="btn-token "><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</p>
-                    <p className="btn-token"><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</p>
+                    <button className="btn-token "><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</button>
+                    <button className="btn-token"><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</button>
+                    <button className="btn-token "><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</button>
+                    <button className="btn-token"><img alt="logo" className="icons" height="16px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</button>
                 </div>
             </div>
             
@@ -121,7 +121,7 @@ function SelectToken() {
                     <p className="m-3">0</p>
                 </div>
 
-                <div className="">
+                <div className="token-list-item">
                     <div className="token-list-whole">
                         <img alt="logo" className="mr-2" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> 
                         <div className="token-list-label">

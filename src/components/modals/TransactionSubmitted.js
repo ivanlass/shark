@@ -15,7 +15,7 @@ function TransactionSubmitted() {
             <Cylinder />
             <p className="modal-label mt-4">Transaction Submitted</p>
             <div className="btn-section">
-            <button className="btns outline sm-btn">View on explorer</button>
+            <button className="btns outline sm-btn size-13">View on explorer</button>
             <button className=" btns full-btn mt-3 mid-btn">View Progress</button>
             </div>
         </div>

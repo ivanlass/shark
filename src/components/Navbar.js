@@ -1,9 +1,23 @@
 import '../App.css';
+import {useState} from 'react'
 import {Container, Navbar, Nav, Form} from 'react-bootstrap'
 import shark from '../images/shark.svg'
 import fox from '../images/fox.svg'
+import { formatEther } from '@ethersproject/units'
+import { ChainId, DAppProvider, useEtherBalance, useEthers } from '@usedapp/core'
+import { formatUnits } from '@ethersproject/units'
 
 function Navigation() {
+    const { activateBrowserWallet, account } = useEthers()
+    const etherBalance = useEtherBalance(account)
+
+    const activate = async () => {
+        await activateBrowserWallet()
+      }
+      const displ = () => {
+          console.log(etherBalance)
+      }
+
     return (
     
     <Navbar className="transparent navigation" expand="lg">
@@ -19,10 +33,12 @@ function Navigation() {
                 style={{ maxHeight: '100px' }}
                 navbarScroll>
             </Nav>
-            
-            <Form className="d-flex">
+            {etherBalance && formatUnits(etherBalance)}
+           
+            {!account && <button onClick={activate}>Connect Wallet</button>}
+            {account && account}
                 <img src={fox} alt="logo" />
-            </Form>
+           
         </Navbar.Collapse>
     </Container>
 </Navbar>

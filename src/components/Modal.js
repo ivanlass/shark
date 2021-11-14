@@ -6,11 +6,11 @@ import WithdrawOrder from "./modals/WithdrawOrder";
 import {ModalContext} from '../context/Modal.context'
 import ConfirmOrder from "./modals/ConfirmOrder";
 import SelectToken from "./modals/SelectToken";
+import Reject from "./modals/Reject";
 
 
 function Modal() {
   const {isOpen, setIsOpen, whichModalToOpen} = useContext(ModalContext)
-
 
 
   const close = () => {
@@ -28,6 +28,7 @@ function Modal() {
       {whichModalToOpen === "SelectToken" && <SelectToken />}
       {whichModalToOpen === "CancelOrder" && <CancelOrder />}
       {whichModalToOpen === "TransactionSubmitted" && <TransactionSubmitted />}
+      {whichModalToOpen === "Rejected" && <Reject />}
 </>
   );
 }

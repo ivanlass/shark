@@ -303,7 +303,6 @@ tr:nth-child(even) {
 .cancel:hover {
   color: white;
   background: #F05858;
-  padding: 5px 16px;
 }
 
 
@@ -401,6 +400,8 @@ tr:nth-child(even) {
   border: 1px solid #7981A9;
   border-radius: 4px;
   padding: 4px 6px;
+  background: none;
+  color: white;
 }
 
 .btn-group-wrapper {

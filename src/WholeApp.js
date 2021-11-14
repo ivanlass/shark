@@ -6,7 +6,9 @@ import MainContent from './components/MainContent';
 import Modal from './components/Modal'
 import {ModalContext} from './context/Modal.context'
 
+
 function App() {
+
     const {isOpen, setIsOpen, whichModalToOpen, setWhichModalToOpen} = useContext(ModalContext)
 
     const openone = () => {
@@ -38,8 +40,16 @@ function App() {
         setWhichModalToOpen("TransactionSubmitted")
         setIsOpen(true)
     }
+
+    const openseven = () => {
+        setWhichModalToOpen("Rejected")
+        setIsOpen(true)
+    }
+
+
   return (
     <div className="App">
+
       <Navigation />
       <button onClick={openone}>WithdrawOrder</button>
       <button onClick={opentwo}>WaitingForConfirmation</button>
@@ -47,6 +57,7 @@ function App() {
       <button onClick={openfour}>SelectToken</button>
       <button onClick={opefive}>CancelOrder</button>
       <button onClick={opesix}>TransactionSubmitted</button>
+      <button onClick={openseven}>Reject</button>
       <MainContent />
       <BottomLines />
       {isOpen && <Modal />}
