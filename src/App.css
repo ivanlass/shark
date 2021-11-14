@@ -57,8 +57,9 @@ body, html {
 
 .cylinder-wrapper {
   position: relative;
-  width: 104px;
   height: 93px;
+  display: flex;
+  justify-content: center;
 }
 
 .cylinder {
@@ -82,6 +83,12 @@ body, html {
   animation-delay: .3s;
 }
 
+.blured-circle {
+  position: absolute;
+  bottom: 0px;
+  width: 700px;
+}
+
 
 @keyframes jump {
   from {
@@ -89,7 +96,7 @@ body, html {
   }
 
   50% {
-    top: 64px
+    top: 62px
   }
 
   100% {
@@ -185,3 +192,124 @@ tr:nth-child(even) {
   right: -26px;
   top:-1px;
 }
+
+
+
+.modal-container {
+  background: rgba(0, 0, 0, 0.515);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+}
+
+
+.modal-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(39, 240, 158, 1));
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1px;
+  border-radius: 15px;
+}
+
+.modal-contents {
+  background: #232844;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.modal-label {
+  font-size: 14px;
+}
+
+.modal-txt {
+  font-size: 10px;
+}
+
+.btns {
+  border: none;
+  outline: none;
+  transition: all .4s cubic-bezier(1, 0.02, 0.25, 1);
+
+}
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.outline {
+  background: none;
+  border: 1px solid #27F09E;
+  color: #27F09E;
+  border-radius: 100px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+.full-btn {
+  background: #0085FF;
+  color: white;
+  border: none;
+  padding: 7px 17px;
+  border-radius: 19px;
+  font-size: 14px;
+}
+
+.cancel {
+  background: none;
+  border: 1px solid #F05858;
+  color: #F05858;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.cancel:hover {
+  color: white;
+  background: #F05858;
+  padding: 5px 16px;
+}
+
+
+.modal-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-info-labels {
+  background: #2D3355;
+  padding: 3px 25px 3px 10px;
+  font-size: 22px;
+  border-radius: 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.sm-p {
+  padding: 5px;
+  width: fit-content;
+}
+
+.ls {
+  letter-spacing: 3px;
+}
+

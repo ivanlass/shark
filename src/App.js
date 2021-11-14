@@ -1,18 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from './components/Navbar';
-import BottomLines from './components/BottomLines';
-import Cylinder from './components/Cylinder';
-import MainContent from './components/MainContent';
-
+import WholeApp from './WholeApp'
+import { ModalProvider } from "./context/Modal.context";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Cylinder />
-      <MainContent />
-      <BottomLines />
+      <ModalProvider>
+        <WholeApp />
+      </ModalProvider>
     </div>
 
   );
