@@ -1,27 +1,33 @@
 import { useContext } from "react";
-import CancelOrder from "./CancelOrder";
-import TransactionSubmitted from "./TransactionSubmitted";
-import WaitingForConfirmation from "./WaitingForConfirmation";
-import WithdrawOrder from "./WithdrawOrder";
+import CancelOrder from "./modals/CancelOrder";
+import TransactionSubmitted from "./modals/TransactionSubmitted";
+import WaitingForConfirmation from "./modals/WaitingForConfirmation";
+import WithdrawOrder from "./modals/WithdrawOrder";
 import {ModalContext} from '../context/Modal.context'
+import ConfirmOrder from "./modals/ConfirmOrder";
+import SelectToken from "./modals/SelectToken";
 
 
 function Modal() {
-  const {isOpen, setIsOpen} = useContext(ModalContext)
+  const {isOpen, setIsOpen, whichModalToOpen} = useContext(ModalContext)
+
 
 
   const close = () => {
     setIsOpen(false)
   }
+  console.log(whichModalToOpen)
 
   return (
     <>
     <div className="modal-container" onClick={close}>
     </div>
-      {/* <WithdrawOrder /> */}
-      {/* <WaitingForConfirmation /> */}
-      <CancelOrder />
-      {/* <TransactionSubmitted /> */}
+      {whichModalToOpen === "WithdrawOrder" && <WithdrawOrder />}
+     {whichModalToOpen === "WaitingForConfirmation" && <WaitingForConfirmation />}
+      {whichModalToOpen === "ConfirmOrder" && <ConfirmOrder />}
+      {whichModalToOpen === "SelectToken" && <SelectToken />}
+      {whichModalToOpen === "CancelOrder" && <CancelOrder />}
+      {whichModalToOpen === "TransactionSubmitted" && <TransactionSubmitted />}
 </>
   );
 }

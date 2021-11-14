@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import {ModalContext} from '../context/Modal.context'
-import Cylinder from "./Cylinder";
+import {ModalContext} from '../../context/Modal.context'
+import Cylinder from "../Cylinder";
 
 function TransactionSubmitted() {
     const {isOpen, setIsOpen} = useContext(ModalContext)
@@ -15,8 +15,8 @@ function TransactionSubmitted() {
             <Cylinder />
             <p className="modal-label mt-4">Transaction Submitted</p>
             <div className="btn-section">
-            <button className="btns outline">View on explorer</button>
-            <button className=" btns full-btn mt-3">View Progress</button>
+            <button className="btns outline sm-btn">View on explorer</button>
+            <button className=" btns full-btn mt-3 mid-btn">View Progress</button>
             </div>
         </div>
     </div>

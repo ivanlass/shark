@@ -6,10 +6,11 @@ export const ModalContext = createContext()
 
 
 export const ModalProvider = (props) => {
-    const [info, setInfo] = useState("asdasd")
+    const [whichModalToOpen, setWhichModalToOpen] = useState("")
     const [isOpen, setIsOpen] = useState(false)
+
     return(
-        <ModalContext.Provider value={{isOpen, setIsOpen, info, setInfo}}>
+        <ModalContext.Provider value={{isOpen, setIsOpen, whichModalToOpen, setWhichModalToOpen}}>
             {props.children}
         </ModalContext.Provider>
     )

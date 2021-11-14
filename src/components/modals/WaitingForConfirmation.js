@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import {ModalContext} from '../context/Modal.context'
-import Cylinder from "./Cylinder";
+import {ModalContext} from '../../context/Modal.context'
+import Cylinder from "../Cylinder";
 
 function WaitingForConfirmation() {
   const {isOpen, setIsOpen} = useContext(ModalContext)
@@ -14,7 +14,7 @@ function WaitingForConfirmation() {
 </button>
               <Cylinder />
           <p className="modal-label mt-4">Waiting for Confirmation</p>
-          <p className="modal-txt">Submitting order to swap from 0.4 BTC to ETH with 15 gwei...</p>
+          <p className="modal-txt">Submitting order to swap from <br/> 0.4 BTC to ETH with 15 gwei...</p>
           </div>
       </div>
   
