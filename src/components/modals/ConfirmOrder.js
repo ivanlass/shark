@@ -57,7 +57,7 @@ function ConfirmOrder() {
                     <p className="size-9">360 Gwei</p>
                 </div>
                 <p className="size-12">Output will be sent to: 0x1234....5678</p>
-            <button className=" btns full-btn mt-3 ls">CONFIRM ORDER</button>
+            <button className=" btns full-btn mt-3 ls" onClick={()=> setIsOpen(false)}>CONFIRM ORDER</button>
         </div>
     </div>
     

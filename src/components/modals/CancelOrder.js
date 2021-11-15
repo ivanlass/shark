@@ -19,7 +19,7 @@ function CancelOrder() {
                 </svg>
                 <p className="modal-info-labels"><img alt="logo" className="icons" height="25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png"/> BTC</p>
             </div>
-            <button className="btns cancel mt-4">CANCEL</button>
+            <button className="btns cancel mt-4" onClick={()=> setIsOpen(false)}>CANCEL</button>
         </div>
     </div>
     

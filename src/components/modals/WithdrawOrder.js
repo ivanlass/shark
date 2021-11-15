@@ -17,7 +17,7 @@ function WithdrawOrder() {
 
                 </div>
                 <p >Amount: 4 ETH</p>
-                <button className=" btns full-btn mt-3 ls">CONFIRM</button>
+                <button className=" btns full-btn mt-3 ls" onClick={()=> setIsOpen(false)}>CONFIRM</button>
         </div>
     </div>
     

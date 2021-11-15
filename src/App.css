@@ -112,6 +112,8 @@ body, html {
 .content-toggle-btn{
   background: none;
   border: none;
+  text-align: left;
+  display: block;
 }
 
 
@@ -149,8 +151,11 @@ th {
   text-align: left;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd){
   background: #0F1325;
+}
+tr > th {
+  background: #232844;
 }
 
 .pooled-label {
@@ -170,8 +175,20 @@ tr:nth-child(even) {
   height: 16px;
   border-radius: 100px;
   padding: 1px;
-  overflow: hidden;
   position: relative;
+}
+
+.inner-progress-line {
+  width: 1px;
+  height: 25px;
+  background: #27F09E;
+  position: absolute;
+  top: 1px;
+}
+
+.progress-bar-label {
+  position: relative;
+  top: 10px;
 }
 
 .full {
@@ -190,7 +207,7 @@ tr:nth-child(even) {
 
 .progress-max-num {
   position: absolute;
-  right: -26px;
+  right: -29px;
   top:-1px;
 }
 
@@ -452,3 +469,47 @@ tr:nth-child(even) {
   margin: 5px 5px 0 0;
   
 }
+
+.sm-btn-swaps {
+  display: inline-block;
+  text-align: left;
+  background: #232844;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.sm-btn-swaps:hover {
+  background: #3F4770;
+}
+
+.pooled-label-alone {
+  display: inline-block;
+}
+
+.options-pooled-swaps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pooled-swaps-label {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 4px;
+  width: 45%;
+}
+
+
+.pooled-btns {
+  background: #15192E;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.active {
+  background: #3F4770;
+}
+
+

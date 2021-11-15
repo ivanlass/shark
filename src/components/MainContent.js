@@ -8,17 +8,14 @@ function MainContent() {
     return (
     <div className="container">
         <div className="row">
-            <div className="col-md-8 offset-2">
-                <div className="main-content-wrapper">
-                    <div className="row">
-                        <div className="col-md-4 left mb-3">
-                            <button style={{color:"white"}} className="content-toggle-btn" onClick={()=> setIsFormVisible(!isFormVisible)}>
-                                {isFormVisible ? "View Pooled Swaps >": "< Go back"}
-                            </button>
-                        </div>
-                    </div>
-                    
-                    {isFormVisible ? <Form /> : <PooledSwaps />}
+            <div className="col-md-10 offset-1">
+                <div className="main-content-wrapper mt-5">
+
+                         {isFormVisible &&   <button style={{color:"white"}} className="content-toggle-btn" onClick={()=> setIsFormVisible(!isFormVisible)}>
+                                View Pooled Swaps >
+                            </button>}
+
+                    {isFormVisible ? <Form /> : <PooledSwaps isFormVisible={isFormVisible} setIsFormVisible={setIsFormVisible}/>}
                 </div>
             </div>
         </div>
