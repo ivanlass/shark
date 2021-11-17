@@ -19,7 +19,7 @@ function Modal() {
     setTimeout(() => {
         setClosing(false)
         setIsOpen(false)
-    }, 10);
+    }, 600);
   }
   
 

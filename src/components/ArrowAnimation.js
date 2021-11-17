@@ -4,7 +4,7 @@ import TransactionSubmittedArrowPointer from '../images/TransactionSubmittedArow
 
 function ArrowAnimation() {
   return (
-    <div className="transaction-submitted-animation-wrapper">
+    <div className="transaction-submitted-animation-wrapper mt-4">
         <img  className = 'arrow-animation' src={TransactionSubmittedArrowPointer} alt="transaction submited animation" />
     </div>
 
