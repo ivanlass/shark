@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import CancelOrder from "./modals/CancelOrder";
-import TransactionSubmitted from "./modals/TransactionSubmitted";
 import WaitingForConfirmation from "./modals/WaitingForConfirmation";
 import WithdrawOrder from "./modals/WithdrawOrder";
 import {ModalContext} from '../context/Modal.context'
