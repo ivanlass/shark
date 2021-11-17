@@ -32,7 +32,6 @@ function Modal() {
       {whichModalToOpen === "ConfirmOrder" && <ConfirmOrder />}
       {whichModalToOpen === "SelectToken" && <SelectToken />}
       {whichModalToOpen === "CancelOrder" && <CancelOrder />}
-      {whichModalToOpen === "TransactionSubmitted" && <TransactionSubmitted />}
       {whichModalToOpen === "Rejected" && <Reject />}
       {whichModalToOpen === 'TransactionSubmittedAddCoinToMetaMask' && <TransactionSubmittedAddCoinToMetaMask />}
 </>

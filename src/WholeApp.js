@@ -34,10 +34,6 @@ function App() {
     setIsOpen(true);
   };
 
-  const opesix = () => {
-    setWhichModalToOpen("TransactionSubmitted");
-    setIsOpen(true);
-  };
 
   const openseven = () => {
     setWhichModalToOpen("Rejected");
@@ -56,7 +52,6 @@ function App() {
       <button onClick={openthree}>ConfirmOrder </button>
       <button onClick={openfour}>SelectToken</button>
       <button onClick={opefive}>CancelOrder</button>
-      <button onClick={opesix}>TransactionSubmitted</button>
       <button onClick={openseven}>Reject</button>
       <button onClick={openeight}>TransactionSubmittedAddCoinToMetaMask</button>
       <MainContent />
