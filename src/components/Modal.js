@@ -7,6 +7,7 @@ import {ModalContext} from '../context/Modal.context'
 import ConfirmOrder from "./modals/ConfirmOrder";
 import SelectToken from "./modals/SelectToken";
 import Reject from "./modals/Reject";
+import TransactionSubmittedAddCoinToMetaMask from "./modals/TransactionSubmittedAddCoinToMetaMask";
 
 
 function Modal() {
@@ -29,6 +30,7 @@ function Modal() {
       {whichModalToOpen === "CancelOrder" && <CancelOrder />}
       {whichModalToOpen === "TransactionSubmitted" && <TransactionSubmitted />}
       {whichModalToOpen === "Rejected" && <Reject />}
+      {whichModalToOpen === 'TransactionSubmittedAddCoinToMetaMask' && <TransactionSubmittedAddCoinToMetaMask />}
 </>
   );
 }

@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
-
-body, html {
+body,
+html {
   background: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   overflow-x: hidden;
 }
@@ -12,7 +11,7 @@ body, html {
 .App {
   text-align: center;
   background: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   letter-spacing: 1px;
 }
@@ -25,24 +24,23 @@ body, html {
 /* Track */
 ::-webkit-scrollbar-track {
   background: none;
-  border: 1px solid #158368; 
+  border: 1px solid #158368;
   border-radius: 7px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #27F09E; 
+  background: #27f09e;
   border-radius: 7px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
-
 .navigation {
-  border-bottom: 2px solid #262C4E;
+  border-bottom: 2px solid #262c4e;
 }
 
 .bottom-lines-wrapper {
@@ -54,7 +52,6 @@ body, html {
 .bottom-lines-img {
   min-width: 100vw;
 }
-
 
 .cylinder-wrapper {
   position: relative;
@@ -77,11 +74,11 @@ body, html {
 
 .circle2 {
   top: 10px;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 .circle3 {
   top: 20px;
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 .blured-circle {
@@ -90,34 +87,28 @@ body, html {
   width: 700px;
 }
 
-
 @keyframes jump {
   from {
-0%: 0;
+    0%: 0;
   }
 
   50% {
-    top: 62px
+    top: 62px;
   }
 
   100% {
-    top: 0px
+    top: 0px;
   }
 }
 
-
-
-
-
-.content-toggle-btn{
+.content-toggle-btn {
   background: none;
   border: none;
   text-align: left;
   display: block;
 }
 
-
-table{
+table {
   width: 100%;
 }
 
@@ -151,8 +142,8 @@ th {
   text-align: left;
 }
 
-tr:nth-child(odd){
-  background: #0F1325;
+tr:nth-child(odd) {
+  background: #0f1325;
 }
 tr > th {
   background: #232844;
@@ -161,17 +152,16 @@ tr > th {
 .pooled-label {
   text-align: left;
   font-size: 25px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-
 .inner-progress {
-  background: #27F09E;
+  background: #27f09e;
   height: 100%;
 }
 
 .outer-progress {
-  border: 1px solid #27F09E;
+  border: 1px solid #27f09e;
   height: 16px;
   border-radius: 100px;
   padding: 1px;
@@ -181,7 +171,7 @@ tr > th {
 .inner-progress-line {
   width: 1px;
   height: 25px;
-  background: #27F09E;
+  background: #27f09e;
   position: absolute;
   top: 1px;
 }
@@ -199,7 +189,6 @@ tr > th {
   border-radius: 100px 0px 0px 100px;
 }
 
-
 .progress-bar-wrapper {
   margin-top: 30px;
   position: relative;
@@ -208,10 +197,8 @@ tr > th {
 .progress-max-num {
   position: absolute;
   right: -29px;
-  top:-1px;
+  top: -1px;
 }
-
-
 
 .modal-container {
   background: rgba(0, 0, 0, 0.515);
@@ -224,7 +211,6 @@ tr > th {
   top: 0;
   bottom: 0;
 }
-
 
 .modal-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(39, 240, 158, 1));
@@ -252,7 +238,6 @@ tr > th {
   top: 4px;
 }
 
-
 .modal-back-btn {
   background: none;
   border: none;
@@ -272,8 +257,7 @@ tr > th {
 .btns {
   border: none;
   outline: none;
-  transition: all .4s cubic-bezier(1, 0.02, 0.25, 1);
-
+  transition: all 0.4s cubic-bezier(1, 0.02, 0.25, 1);
 }
 
 .btn-section {
@@ -293,15 +277,15 @@ tr > th {
 
 .outline {
   background: none;
-  border: 1px solid #27F09E;
-  color: #27F09E;
+  border: 1px solid #27f09e;
+  color: #27f09e;
   border-radius: 10px;
   padding: 5px 10px;
   font-size: 10px;
 }
 
 .full-btn {
-  background: #0085FF;
+  background: #0085ff;
   color: white;
   border: none;
   padding: 7px 17px;
@@ -311,17 +295,16 @@ tr > th {
 
 .cancel {
   background: none;
-  border: 1px solid #F05858;
-  color: #F05858;
+  border: 1px solid #f05858;
+  color: #f05858;
   border-radius: 10px;
   padding: 5px 10px;
 }
 
 .cancel:hover {
   color: white;
-  background: #F05858;
+  background: #f05858;
 }
-
 
 .modal-info-wrapper {
   display: flex;
@@ -329,7 +312,7 @@ tr > th {
 }
 
 .modal-info-labels {
-  background: #2D3355;
+  background: #2d3355;
   padding: 3px 25px 3px 10px;
   font-size: 22px;
   border-radius: 10px;
@@ -352,13 +335,12 @@ tr > th {
   letter-spacing: 3px;
 }
 
-
 .negative-margin {
   margin-left: -16px;
 }
 
 .confirm-section {
-  background: #1A1D31;
+  background: #1a1d31;
   padding: 5px 10px;
   border-radius: 8px;
 }
@@ -385,10 +367,9 @@ tr > th {
   justify-content: space-between;
 }
 
-
 .input-group-wrapper {
-  background: #0F1325;
-  border: 1px solid #3A7CB5;
+  background: #0f1325;
+  border: 1px solid #3a7cb5;
   border-radius: 8px;
   padding: 5px;
   display: flex;
@@ -410,11 +391,9 @@ tr > th {
   padding-bottom: 10px;
 }
 
-
-
-.btn-token{
+.btn-token {
   display: inline-block;
-  border: 1px solid #7981A9;
+  border: 1px solid #7981a9;
   border-radius: 4px;
   padding: 4px 6px;
   background: none;
@@ -424,12 +403,11 @@ tr > th {
 .btn-group-wrapper {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .input-group-div {
-  border-bottom: 2px solid #1A1D31;
-  border-top: 2px solid #1A1D31;
+  border-bottom: 2px solid #1a1d31;
+  border-top: 2px solid #1a1d31;
   padding: 24px 45px;
 }
 
@@ -441,7 +419,7 @@ tr > th {
 }
 
 .token-list-item:hover {
-  background: #0F1325;
+  background: #0f1325;
   cursor: pointer;
 }
 
@@ -460,14 +438,12 @@ tr > th {
 .token-list-whole {
   display: flex;
   padding: 5px;
-  
 }
 
 .token-list {
   height: 600px;
   overflow-y: scroll;
   margin: 5px 5px 0 0;
-  
 }
 
 .sm-btn-swaps {
@@ -480,7 +456,7 @@ tr > th {
 }
 
 .sm-btn-swaps:hover {
-  background: #3F4770;
+  background: #3f4770;
 }
 
 .pooled-label-alone {
@@ -505,9 +481,8 @@ tr > th {
   width: 45%;
 }
 
-
 .pooled-btns {
-  background: #15192E;
+  background: #15192e;
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
@@ -515,9 +490,8 @@ tr > th {
 }
 
 .active {
-  background: #3F4770;
+  background: #3f4770;
 }
-
 
 /*Form*/
 .form-wrapper-outside {
@@ -526,7 +500,7 @@ tr > th {
   height: 102px;
   width: 614px;
   padding: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .form-wrapper {
@@ -547,9 +521,9 @@ tr > th {
   align-items: center;
   justify-content: center;
 }
-.arrow{
-  margin-top: -30px;
- margin-bottom: 20px;
+.arrow {
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 .form-row-label {
   justify-content: end;
@@ -638,6 +612,7 @@ tr > th {
 .deposit-input-field {
   background: #0f1325;
   border: none;
+  outline: none;
   color: #fff;
 }
 
@@ -645,6 +620,7 @@ tr > th {
   background: #0f1325;
   border: none;
   color: #fff;
+  outline: none;
   width: 80%;
 }
 
@@ -655,13 +631,13 @@ tr > th {
   background-color: #c4c4c4;
   border-radius: 50%;
   margin-bottom: 1px;
-  margin-left:-10px;
+  margin-left: -10px;
 }
 
 .select-a-token-button {
   color: #fff;
   background: #0f1325;
-  border: 1px #606896  solid;
+  border: 1px #606896 solid;
   border-radius: 15px;
   width: 94px;
   height: 15px;
@@ -709,13 +685,12 @@ tr > th {
 }
 /*End of form*/
 
-
 .toggle-btn-wrapper {
   display: flex;
   justify-content: center;
   border-radius: 5px;
   width: 160px;
-  background: #15192E;
+  background: #15192e;
   padding: 2px;
   cursor: pointer;
   margin-left: 30px;
@@ -730,5 +705,5 @@ tr > th {
 }
 
 .active-toggle {
-  background: linear-gradient(180deg, #3AC0C9 0%, rgba(58, 192, 201, 0) 100%);
+  background: linear-gradient(180deg, #3ac0c9 0%, rgba(58, 192, 201, 0) 100%);
 }
