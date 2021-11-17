@@ -6,6 +6,7 @@ import arrow from "../images/Arrow.svg";
 import { ModalContext } from "../context/Modal.context";
 import { CoinContext } from "../context/Coin.context";
 
+
 function Form() {
   const [confirmationButton, setConfirmationButton] = useState(false);
   const { setIsOpen, setWhichModalToOpen, setIsFirstToken } = useContext(ModalContext);

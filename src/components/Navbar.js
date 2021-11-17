@@ -16,6 +16,10 @@ function Navigation() {
     const activate = async () => {
         await activateBrowserWallet()
     }
+
+    const disconnect = async () => {
+        console.log(deactivate())
+    }
     
     const copyAddress = () => {
         navigator.clipboard.writeText(account)
@@ -64,7 +68,7 @@ function Navigation() {
             
             
             
-            <button className="btn-nav" onClick={account? deactivate: activate}>{account?"Disconnect":"Connect Wallet"}</button>
+            <button className="btn-nav" onClick={account? disconnect : activate}>{account?"Disconnect":"Connect Wallet"}</button>
             <img src={fox} alt="logo" />
             
         </Navbar.Collapse>
