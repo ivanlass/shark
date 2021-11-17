@@ -7,8 +7,7 @@ import Modal from "./components/Modal";
 import { ModalContext } from "./context/Modal.context";
 
 function App() {
-  const { isOpen, setIsOpen, whichModalToOpen, setWhichModalToOpen } =
-    useContext(ModalContext);
+  const { isOpen, setIsOpen, whichModalToOpen, setWhichModalToOpen } = useContext(ModalContext);
 
   const openone = () => {
     setWhichModalToOpen("WithdrawOrder");

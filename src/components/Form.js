@@ -1,12 +1,28 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Vector from "../images/Vector.svg";
 import BTC from "../images/BTC.svg";
 import question from "../images/question.svg";
 import arrow from "../images/Arrow.svg";
-
+import { ModalContext } from "../context/Modal.context";
+import { CoinContext } from "../context/Coin.context";
 
 function Form() {
   const [confirmationButton, setConfirmationButton] = useState(false);
+  const { setIsOpen, setWhichModalToOpen, setIsFirstToken } = useContext(ModalContext);
+  const {firstToken, secondToken} = useContext(CoinContext)
+
+  const openModalForFirstToken = () => {
+    setWhichModalToOpen("SelectToken")
+    setIsFirstToken(true)
+    setIsOpen(true)
+  }
+
+  const openModalForSecondToken = () => {
+    setWhichModalToOpen("SelectToken")
+    setIsFirstToken(false)
+    setIsOpen(true)
+  }
+
   return (
     <div>
       {/*First  window*/}
@@ -18,11 +34,11 @@ function Form() {
           </div>
           <div className="form-row ">
             {/* Deposit dropdown */}
-            <div className="form-col form-col-sm">
+            <div className="form-col form-col-sm clickable" onClick={openModalForFirstToken}>
               <div className="label label-dropdown">Deposit</div>
               <div className="deposit-row">
-                <img src={BTC} alt="btc" style={{ marginLeft: "-30px" }}></img>
-                <p>BTC</p>
+                <img src={firstToken == null ? BTC : firstToken.logo} alt="btc" style={{ marginLeft: "-30px" }}></img>
+                <p>{firstToken == null ? "BTC":firstToken.shortcut}</p>
                 <img src={Vector} alt="vector"></img>
               </div>
             </div>
@@ -60,8 +76,9 @@ function Form() {
           </div>
           <div className="form-row">
             {/* Receive dropdown */}
-            <div
-              className="form-col form-col-sm"
+           {secondToken == null ? <div
+              onClick={openModalForSecondToken}
+              className="form-col form-col-sm clickable"
               style={{ marginRight: "16px" }}
             >
               <div
@@ -77,6 +94,16 @@ function Form() {
                 </button>
               </div>
             </div>
+          :
+          (<div className="form-col form-col-sm click clickable" onClick={openModalForSecondToken} style={{marginRight:"20px"}}>
+          <div className="label label-dropdown">Deposit</div>
+          <div className="deposit-row">
+            <img src={secondToken == null ? BTC : secondToken.logo} alt="btc" style={{ marginLeft: "-30px" }}></img>
+            <p>{secondToken.shortcut}</p>
+            <img src={Vector} alt="vector"></img>
+          </div>
+        </div>)
+          }
             {/*First input field in second window*/}
             <div
               className="form-col form-col-sm border-outline"
