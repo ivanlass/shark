@@ -129,7 +129,6 @@ table {
 }
 
 td {
-  padding: 10px 0 0;
   font-size: 12px;
 }
 
@@ -162,7 +161,7 @@ tr > th {
 
 .outer-progress {
   border: 1px solid #27f09e;
-  height: 16px;
+  height: 10px;
   border-radius: 100px;
   padding: 1px;
   position: relative;
@@ -170,7 +169,7 @@ tr > th {
 
 .inner-progress-line {
   width: 1px;
-  height: 25px;
+  height: 16px;
   background: #27f09e;
   position: absolute;
   top: 1px;
@@ -178,7 +177,7 @@ tr > th {
 
 .progress-bar-label {
   position: relative;
-  top: 10px;
+  top: 5px;
 }
 
 .full {
@@ -190,14 +189,14 @@ tr > th {
 }
 
 .progress-bar-wrapper {
-  margin-top: 30px;
+  margin-top: 32px;
   position: relative;
 }
 
 .progress-max-num {
   position: absolute;
   right: -29px;
-  top: -1px;
+  top: -3px;
 }
 
 .modal-container {
@@ -525,9 +524,8 @@ tr > th {
 .options-pooled-swaps {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  height: 40px;
-  margin-right: 10px;
+
+  margin-right: 5px;
 }
 .right {
   justify-content: space-around;
@@ -548,8 +546,10 @@ tr > th {
   background: #15192e;
   color: white;
   border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 15px;
+  padding: 2px 7px;
+  margin-left: 6px;
+  font-size: 12px;
+  height: 100%;
 }
 
 .active {
@@ -760,6 +760,10 @@ tr > th {
   cursor: pointer;
   margin-left: 30px;
   margin-right: 10px;
+  padding: 2px 7px;
+  margin-left: 6px;
+  font-size: 12px;
+
 }
 
 .toggle-option {
@@ -767,6 +771,7 @@ tr > th {
   border-radius: 5px;
   padding: 6px;
   width: 140px;
+  height: 30px;
 }
 
 .active-toggle {

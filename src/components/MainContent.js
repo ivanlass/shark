@@ -8,7 +8,7 @@ function MainContent() {
     return (
     <div className="container">
         <div className="row">
-            <div className={isFormVisible? "col-md-6 offset-3":"col-md-10 offset-1"}>
+            <div className="col-md-6 offset-3">
                 <div className="main-content-wrapper mt-5">
 
                          {isFormVisible &&         

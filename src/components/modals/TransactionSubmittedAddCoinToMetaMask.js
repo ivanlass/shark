@@ -21,9 +21,9 @@ function TransactionSubmittedAddCoinToMetaMask() {
                     <path d="M15.1348 1.51071L13.6581 0L7.80337 5.98929L1.94867 0L0.471909 1.51071L6.3266 7.5L0.471909 13.4893L1.94867 15L7.80337 9.01071L13.6581 15L15.1348 13.4893L9.28013 7.5L15.1348 1.51071Z" fill="#7981A9"/>
                 </svg>
             </button>
+            <p className="text-start ls negative-margin " style={{fontWeight:"bold", marginTop:"1px"}}>Transaction Submitted</p>
             <ArrowAnimation />
-            <p className="modal-label mt-4">Transaction Submitted</p>
-            <div className="btn-section">
+            <div className="btn-section mt-3">
             <button className="btns outline sm-btn size-13" onClick={close}>View progress</button>
             <button className=" btns full-btn mt-3 mid-btn" onClick={close} style ={{width:'214px'}}>Add COIN to MetaMask</button>
             </div>

@@ -6,7 +6,7 @@ function PooledSwaps(props) {
     const [filter, setFilter] = useState("Open")
     return (
         <>
-        <div className="options-pooled-swaps">
+        <div className="options-pooled-swaps mb-2">
         <div className="toggle-btn-wrapper ">
             <span  onClick={()=> props.setIsFormVisible(!props.isFormVisible)} className=" toggle-option">Swap</span>
             <span className=" toggle-option active-toggle">Order</span>
@@ -34,23 +34,15 @@ function PooledSwaps(props) {
                     <tr>
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
-                        <td> <ProgressBar width={50}/> </td>
-                        <td>arrow</td>
-                        <td>Cancel</td>
-                    </tr>
-
-                    <tr>
-                        <td>0.4 BTC</td>
-                        <td>4 ETH</td>
-                        <td> <ProgressBar width={50}/> </td>
-                        <td>arrow</td>
-                        <td>Cancel</td>
-                    </tr>
-
-                    <tr>
-                        <td>0.4 BTC</td>
-                        <td>4 ETH</td>
                         <td> <ProgressBar width={100}/> </td>
+                        <td>arrow</td>
+                        <td>Cancel</td>
+                    </tr>
+
+                    <tr>
+                        <td>0.4 BTC</td>
+                        <td>4 ETH</td>
+                        <td> <ProgressBar width={10}/> </td>
                         <td>arrow</td>
                         <td>Cancel</td>
                     </tr>
@@ -66,10 +58,12 @@ function PooledSwaps(props) {
                     <tr>
                         <td>0.4 BTC</td>
                         <td>4 ETH</td>
-                        <td> <ProgressBar width={23}/> </td>
+                        <td> <ProgressBar width={50}/> </td>
                         <td>arrow</td>
                         <td>Cancel</td>
                     </tr>
+
+                    
                     
                     
                 </tbody>
